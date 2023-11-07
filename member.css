@@ -62,3 +62,13 @@ h1{
     margin-top: 25px;
     
 }
+
+@media print{
+    #body{
+        background: red;
+    }
+    
+    #Btn1{
+        display: none;
+    }
+}

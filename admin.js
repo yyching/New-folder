@@ -42,12 +42,12 @@ form.addEventListener('submit', function (e) {
     validateInputs();
 
     // Check if all input fields are successful
-    const inputControls = form.querySelectorAll('.form');
+    const inputControls = form.querySelectorAll('.textBox input');
     let allInputsValid = true;
 
     //check for each input
     inputControls.forEach(inputControl => {
-        if (!inputControl.classList.contains('success')) {
+        if (!inputControl.parentElement.classList.contains('success')) {
             allInputsValid = false;
         }
     });

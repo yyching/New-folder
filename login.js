@@ -78,8 +78,8 @@ loginForm.addEventListener('submit', function (e) {
 
     loadAccount();
 
-    const enteredUsername = username.value;
-    const enteredPassword = password.value;
+    const enteredUsername = loginUsername.value;  // Use loginUsername instead of username
+    const enteredPassword = loginPassword.value;  // Use loginPassword instead of password
 
     let found = false;
 
@@ -90,6 +90,7 @@ loginForm.addEventListener('submit', function (e) {
             break;
         }
     }
+    
     if (found) {
         alert('Login successful!');
         const loginAccount = {
@@ -105,6 +106,6 @@ loginForm.addEventListener('submit', function (e) {
         window.location.href = 'member.html';
     } else {
         alert('Login failed. Invalid credentials.');
-
     }
 });
+
