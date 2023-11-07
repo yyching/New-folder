@@ -16,7 +16,7 @@ form{
     height: 630px;
     padding: 75px 50px;
     left: 50%;
-    top: 50%;
+    top: 45%;
     position: absolute;
     transform: translate(-50%,-50%);
     border-radius: 5px;
@@ -63,12 +63,11 @@ h1{
     
 }
 
-@media print{
-    #body{
-        background: red;
-    }
-    
-    #Btn1{
+/* Apply the following styles when printing */
+@media print {
+    /* Hide the print button */
+    #print-button {
         display: none;
     }
+
 }
