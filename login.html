@@ -6,22 +6,21 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="post" action="login.html">
+    <form novalidate id="form">
         <h1>Login</h1>
         <div class="textBox">
-            <input type="text" placeholder="username">
+            <input type="text" placeholder="username" id="username">
+            <div class="error"></div>
         </div>
         <div class="textBox">
-            <input type="text" placeholder="password">
+            <input type="text" placeholder="password" id="password">
+            <div class="error"></div>
         </div>
-        <div class="Btn1">
-            <a href="member.html">
-                <input type="button" value="login" >
-            </a>
-        </div>
+        <input type="submit" value="login" class="Btn1">
         <div class="Btn2">
             <a href="admin.html">Sign Up</a>
         </div>
     </form>
+    <script src="login.js"></script>
 </body>
 </html>

@@ -29,7 +29,6 @@ h1{
 }
 
 .textBox{
-    border-bottom: 2px solid white;
     position: relative;
     margin: 45px 0;
 }
@@ -42,10 +41,31 @@ h1{
     font-size: 20px;
 }
 
-.Btn1 a input{
+.Btn1{
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.Btn1 input{
     height: 45px;
     width: 100%;
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
+}
+
+.Btn2{
+    margin-top: 25px;
+}
+
+.Btn2 a{
+    color: black;
+}
+
+.error {
+    color: #ff3860;
+    font-size: 15px;
+    height: 13px;
 }

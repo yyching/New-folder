@@ -6,10 +6,10 @@
     <title>Member</title>
 </head>
 <body>
-    <form action="post" action="member.html">
+    <form id="member-form">
         <h1>New Member</h1>
         <div class="textBox">
-            <input type="text" placeholder="name">
+            <input type="text" id="name" placeholder="Name">
         </div>
         <div class="textBox">
             <label for="gender" class="gender">Gender :</label>
@@ -19,16 +19,17 @@
             </select>
         </div>
         <div class="textBox">
-            <input type="date" placeholder="date">
+            <input type="date" id="date" placeholder="Date">
         </div>
         <div class="textBox">
-            <input type="text" placeholder="address">
+            <input type="text" id="address" placeholder="Address">
         </div>
         <div class="Btn1">
-            <a href="#">
-                <input type="button" value="print" >
-            </a>
+            <button id="print-button">Print</button>
         </div>
     </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="member.js"></script>
 </body>
 </html>
